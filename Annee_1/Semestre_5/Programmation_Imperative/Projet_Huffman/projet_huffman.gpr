@@ -1,0 +1,20 @@
+project Projet_Huffman is
+    for Source_Dirs use ("src");
+    for Object_Dir use "obj";
+
+    for Main use ("test_ab.adb","test_tab_ab.adb","test_tab_huff.adb","test_octet.adb","compresser.adb","decompresser.adb");
+
+    
+    package Builder is
+        for Default_Switches ("ada") use ("-s");
+    end Builder;
+
+    package Compiler is
+        for Default_Switches ("ada") use ("-gnatwa", "-gnata", "-g");
+    end Compiler;
+
+    package Binder is
+        for Default_Switches ("ada") use ("-E");
+    end Binder;
+
+end Projet_Huffman;
