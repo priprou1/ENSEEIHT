@@ -1,0 +1,339 @@
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = avants
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = complexes
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = complexes
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = complexes
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   1.2497e+12   3.1225e+10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.589203e-27.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+   1.0000e+00   4.9918e+13   3.1505e+18   2.5102e+09   4.0000e+00
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.589203e-27.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.393944e-18.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+   2.0000e+00   5.9316e+08   1.7585e+09   2.5101e+09   4.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02  -1.9882e+00   9.9416e-01
+   1.0000e+02  -2.5102e+09  -5.9303e+04
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   5.5728e-11   1.0706e-21   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =1
+Methode diff finies = centrees
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   5.5728e-11   1.0706e-21   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   1.2497e+12   3.1225e+10
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.589203e-27.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+   1.0000e+00   4.9918e+13   3.1505e+18   2.5102e+09   4.0000e+00
+
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  1.589203e-27.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+[Warning: Matrix is close to singular or badly scaled. Results may be inaccurate. RCOND =  6.393944e-18.] 
+[> In GN_ref
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('exem1_diff_finies', '/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m', 112)" style="font-weight:bold">exem1_diff_finies</a> (<a href="matlab: opentoline('/home/pgonthie/Documents/Annee_1/Optimisation/TP3/src_eleves/exem1_diff_finies.m',112,0)">line 112</a>)
+] 
+   2.0000e+00   5.9316e+08   1.7585e+09   2.5101e+09   4.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02  -1.9882e+00   9.9416e-01
+   1.0000e+02  -2.5102e+09  -5.9303e+04
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = avants
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4991e+08   3.1225e+10
+
+   1.0000e+00   5.5686e+05   3.1007e+10   2.4913e+05   4.0000e+00
+
+   2.0000e+00   1.9129e-07   3.6596e-15   2.4903e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4902e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = centrees
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.2100e-08   1.4670e-17   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
+Algorithme de Gauss-Newton
+Vraie Jacobienne =0
+Methode diff finies = complexes
+ndigits :  8 
+------------------------------------------------------------------
+         k     ||f'(beta)||   f(beta)      ||delta||    exitflag 
+------------------------------------------------------------------
+            0   2.4990e+08   3.1225e+10
+
+   1.0000e+00   5.5678e+05   3.1001e+10   2.4910e+05   4.0000e+00
+
+   2.0000e+00   1.0316e-11   8.8487e-23   2.4900e+05   1.0000e+00
+
+------------------------------------------------------------------
+betak
+   5.0000e+02   1.0000e+00   1.0000e+00
+   1.0000e+02  -2.4900e+05   1.0000e+00
+
