@@ -1,0 +1,2 @@
+Exercice 3 :
+Car comme chaque point est un sommet de 2 segments différents, il y a une translation de chaque point 2 fois

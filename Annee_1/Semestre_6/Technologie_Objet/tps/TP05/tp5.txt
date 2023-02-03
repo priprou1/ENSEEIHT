@@ -1,0 +1,53 @@
+#Exercice 1:
+Le mot clé extends est présent, il indique que PointNomme est une sous-classe de Point.
+Il y a un attibut nom qui n'est pas présent dans point.
+Le constructeur commence par super, qui est un appel au constructeur de point.
+Il y a ensuite des méthodes en plus ajoutée.
+Puis il y a une extention de méthodes de point avec le mot clé @Override.
+
+#Exercice 2:
+##2.1)
+l11: C'est autorisé, on a le droit d'utiliser la superclasse toute seule.
+l12: Le translater est celui de point.
+l13: p1 = (13, 14)
+l17: Oui car PointNomme est une sous-classe avec son constructeur.
+l19: Celui de PointNomme.
+l20: pn1 = PN1:(40, 50)
+l27: Oui car les 2 poignée son de type Point.
+l30: > q = p1
+     q = (13, 14)
+l33: Oui car q est un Point et pn1 est un PointNomme qui est une sous classe de Point.
+l36: > q = pn1
+     q = PN1:(40, 50)
+l42: Non car qn est de type PointNomme et p1 est de type Point, c'est incompatible car PointNomme est une sous-classe de Point.
+l45: Pas d'affichage.
+l48: Oui car les 2 sont du même type PointNomme.
+l50: qn = pn1
+     qn = PN1:(40, 50)
+l53: Oui car pn1 est un un PointNomme qui est une sous-classe de Point donc un Point.
+l56: Oui car PointNomme contient toutes les méthodes de Point car c'est une sous-classe.
+l59: Oui car PointNomme contient toutes les méthodes de Point car c'est une sous-classe.
+l63: Non car un PointNomme ne peux pas être un Point, une sous-classe ne peut pas être une classe.
+l64: Rien erreur.
+l68: Oui car la classe réelle de q est un PointNomme (construit à partir d'un PointNomme) même si la classe apparente est Point.
+l72: Non car un PointNomme ne peux pas être un Point, une sous-classe ne peut pas être une classe.
+
+##2.3)
+Il y a un problème de compilation de PointNomme car PointNomme étend une méthode qui est interdite (du au mot clé final).
+
+##2.4)
+Il y a un problème de compilation de PointNomme car PointNomme étend une classe qui est interdite (du au mot clé final).
+
+##2.5)
+Car la distance est définie entre 2 types Point et un PointNomme est un Point, du à sa sous classe.
+
+##2.6)
+Car q est du type Point donc comme Point Nomme est un Point, il peut être un PointNomme.
+
+#Exercice 3:
+##3.1)
+Oui, il y aurait l'affichage de Point pour l'extrémité étant un Point et l'affichage de Point aussi pour l'extrémité étant un PointNomme.
+
+##3.2)
+Il y a juste à changer les Point que l'on veut en PointNomme.
+ 

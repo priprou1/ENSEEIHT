@@ -1,0 +1,35 @@
+##Exercice 1:
+1.1) 
+nom de la classe
+attributs
+constructeurs
+méthode
+les requêtes deviendront soit des attributs soit des commandes
+1.2) Les constructeurs doivent arriver avant les requêtes.
+
+##Exercice 2:
+2.1)
+l39: p1=(9,2)
+l44: p1=(0,2)
+l54: p3=(100,112)
+l63: p1=(100,112)
+l69: p3=(123,321)
+l70: p1=(100,112)
+l75: p1=(123,321)
+l76: p2=(123,321)
+l77: p3=(123,321)
+l82: p1=(0,0)
+l83: p2=(0,0)
+l84: p3=(0,0)
+
+il n'y a qu'un point d'accessible
+
+2.6) Oui car il n'y a pas de constructeurs dans point qui ne contient pas d'argument. Le constructeur par defaut a été enlevé car il y a un autre constructeur qui a été écrit. Cela permet que les points soient correctement initialisés.
+
+##Exercice 3:
+3.2) translater:    
+    dx - déplacement suivant l'axe des X
+    dy - déplacement suivant l'axe des Y
+afficher: 
+Afficher le segment sous la forme :  [extremite1-extremite2]
+ 

@@ -1,0 +1,61 @@
+Nom       : Gonthier
+Prénom    : Priscilia
+Groupe TP : M
+
+Les « ... » indiquent les endroits à compléter.
+
+=====[ Temps passé ]============================================================
+
+Ces informations de temps sont demandées à titre indicatif et ne sont pas
+prises en compte dans la notation du projet.
+
+
+* Temps passé sur la V1 : 20 heures 
+* Temps passé sur la V2 : 4 heures
+
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+
+
+=====[ Questions ]==============================================================
+
+--------------------------------------------------------------------------------
+Pourquoi l'exception OperationInterditeException ne peut pas être définie
+comme vérifiée par le compilateur ?
+--------------------------------------------------------------------------------
+
+
+Car ce n'est pas une erreur de compilation, c'est une erreur de programmation.
+
+
+--------------------------------------------------------------------------------
+Expliquer ce qu'il faut faire pour ajouter un nouveau niveau de jeu, par
+exemple la stratégie lente (C13).  Pour plus de précision, on numérotera
+les étapes à faire.
+--------------------------------------------------------------------------------
+
+Tout d'abord il faut créer une classe qui implémente l'interface Stratégie. 
+Dans la méthode getStrategie(String nomStrategie, String nomJoueur) situer dans Jouer il faut ajouter un case. Il faudra donc ajouter :
+case nomDeLaStrategie :
+    strategie = new NomDeLaStrategie();
+    break;
+
+
+--------------------------------------------------------------------------------
+Expliquer ce qui permet, dans votre conception, de changer dynamiquement
+(en cours d'exécution du programme) la stratégie d'un joueur (C14).
+--------------------------------------------------------------------------------
+
+La méthode setStratégie() de Joueur permet de changer la stratégie du Joueur.
+On peut l'utiliser en cours de partie pour changer dynamiquement la stratégie du Joueur.
+
+
+=====[ Explications ]===========================================================
+
+--------------------------------------------------------------------------------
+Donner ici les explications supplémentaires utiles à la compréhension du
+travail rendu.
+--------------------------------------------------------------------------------
+
+...
+
+--------------------------------------------------------------------------------

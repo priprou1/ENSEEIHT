@@ -1,0 +1,4 @@
+Manifest-Version: 1.0 
+Created-By: Lauriol François, Gras Yael, Catoni Nicolas, Devilder Alice
+ , Amrach Eya, Delmaire Clément, Gonthier Priscilia
+Main-Class: src/Executable

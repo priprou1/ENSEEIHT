@@ -1,0 +1,23 @@
+#Exercice 1:
+1.1)
+Il faut que la classe X hérite des classes Segment, Point et PointNomme.
+
+1.2)
+Le code de Point, PointNomme ou de Segment suivant la sous classe de l'élément.
+
+1.3)
+Toutes les méthodes communes à Point, Segment, PointNomme et les autres en abstract.
+
+#Exercice 2:
+2.1)
+Non, car on ne sait pas si c'est un Point ou un Segment et on comme l'affichage est différent ce sera mis en abstract.
+
+2.2)
+Non car on a pas accès aux sous-classes pour le moment. C'est une classe abstraite, on ne peut pas créer d'objet.
+
+2.3)
+Le constructeur global qui contient les infos identiques à Point et à Segment.
+
+2.4)
+Lors de l'appel aux constructeurs dans Point et Segment.
+

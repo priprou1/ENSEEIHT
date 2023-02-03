@@ -1,0 +1,6 @@
+Exo 1:
+1) 
+
+2) Car on ne veut pas pouvoir le modifier (donc y accéder) après un envoie.
+
+

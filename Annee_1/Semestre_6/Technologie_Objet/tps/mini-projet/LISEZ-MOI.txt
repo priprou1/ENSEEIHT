@@ -1,0 +1,41 @@
+Nom       : Gonthier
+Prénom    : Priscilia
+Groupe TP : M
+
+
+Consigne :  Ci-dessous, répondre à la place des « ... ».
+
+
+=====[ Temps ]==================================================================
+
+Temps passé sur la V1 : 8 heures ... minutes
+Temps passé sur la V2 : ... heures ... minutes
+Pour la V2 on ne tiendra pas compte du temps passé sur la V1.
+Bien sûr, les temps renseignés ici ne sont pas pris en compte dans la notation.
+
+
+=====[ Questions ]==============================================================
+
+Indiquer la relation UML entre Cercle et le Point centre du cercle.
+-------------------------------------------------------------------
+
+Relation de composition : La classe Cercle dépend de la classe Point. La classe 
+Point est le type du centre de Cercle. Si point est détruit Cercle aussi. Cercle est considéré comme le 
+tout et Point une des parties de Cercle.
+
+
+Comment est réalisée l'exigence E18 ?
+-------------------------------------
+
+On réalise l'exigence E18 en créant une copie du point utilisé pour créer le 
+centre. En effet, si on ne le copie pas, l'utilisateur pourra utiliser les 
+modificateurs et accesseurs de la classe Point dessus, car il aurait une adresse
+mémoire accessible. De même lorsque l'on veut accèder au point par exemple via getCentre(), c'est une copie du point qui est renvoyé afin d'éviter que l'utilisateur ait accès au centre et puisse le modifier via des méthodes que ne sont pas celles de Cercle.
+
+
+=====[ Explications ]===========================================================
+
+(Facultatif) Donner ici les explications supplémentaires utiles à la
+compréhension du travail rendu.
+
+...
