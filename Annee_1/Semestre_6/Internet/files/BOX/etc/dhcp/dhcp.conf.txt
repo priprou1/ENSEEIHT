@@ -1,0 +1,12 @@
+default-lease-time 600;
+max-lease-time 7200;
+
+authoritative;
+
+subnet 192.168.193.0 netmask 255.255.255.128 {
+	range 192.168.193.2 192.168.193.127;
+	option subnet-mask 255.255.255.128;
+	option broadcast-address 192.168.193.127;
+	option routers 192.168.193.1;
+	option domain-name-servers 200.200.26.194;
+}

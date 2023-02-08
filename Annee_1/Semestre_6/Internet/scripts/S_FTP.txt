@@ -1,0 +1,32 @@
+#!/bin/bash
+ip addr add 200.200.26.196/26 dev eth0
+ip link set dev eth0 up
+#echo 1 >/proc/sys/net/ipv4/ip_forward
+ip route add default via 200.200.26.193
+
+#Problème de fonctionnement
+
+#Ajouter un nouvel utilisateur
+useradd pgonthie
+
+#Ajouter le mot de passe de l'utilisateur
+echo "pgonthie:pgonthie" | chpasswd
+
+#Creer le dossier home
+mkdir /home/pgonthie
+
+#Dire que l'utilisateur est le propriétaire du répertoire
+chown pgonthie /home/pgonthie
+usermod --shell /bin/bash pgonthie
+
+#Lancer le serveur FTP
+hostname FTP
+chmod -R 664 /home/pgonthie
+
+#Enlever le mode world-writable pour pouvoir configurer
+chmod o-w /etc/proftpd/ etc/proftpd/modules.conf etc/proftpd/proftpd.conf
+
+
+echo "200.200.26.196 FTP" >> /etc/hosts
+service proftpd start
+
