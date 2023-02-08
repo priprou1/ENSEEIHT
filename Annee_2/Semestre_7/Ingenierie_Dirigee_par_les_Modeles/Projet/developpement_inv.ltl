@@ -1,0 +1,17 @@
+[] (Conception_ready + Conception_started = 1);
+[] (Conception_ready + Conception_running + Conception_finished = 1);
+[] (Conception_finished => [] Conception_started);
+[] (RedactionDoc_ready + RedactionDoc_started = 1);
+[] (RedactionDoc_ready + RedactionDoc_running + RedactionDoc_finished = 1);
+[] (RedactionDoc_finished => [] RedactionDoc_started);
+[] (Programmation_ready + Programmation_started = 1);
+[] (Programmation_ready + Programmation_running + Programmation_finished = 1);
+[] (Programmation_finished => [] Programmation_started);
+[] (RedactionTests_ready + RedactionTests_started = 1);
+[] (RedactionTests_ready + RedactionTests_running + RedactionTests_finished = 1);
+[] (RedactionTests_finished => [] RedactionTests_started);
+[] (RedactionDoc_finished => [] Conception_finished);
+[] (RedactionDoc_started => [] Conception_started);
+[] (Programmation_started => [] Conception_finished);
+[] (RedactionTests_started => [] Conception_started);
+[] (RedactionTests_finished => [] Programmation_finished);

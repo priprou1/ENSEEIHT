@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    xsi:schemaLocation="http://simplepdl ../SimplePDL.ecore"
+    name="ExempleProcessKO">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      name="A1">
+    <utilisations
+        nb="-3"
+        ressource="//@processElements.1"
+        name="U_neg"/>
+    <utilisations
+        nb="7"
+        ressource="//@processElements.3"
+        name="U_tropgrande"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="-5"
+      name="R_neg"
+      utilisations="//@processElements.0/@utilisations.0"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="2"
+      name="R1"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="3"
+      name="R1"
+      utilisations="//@processElements.0/@utilisations.1"/>
+</simplepdl:Process>

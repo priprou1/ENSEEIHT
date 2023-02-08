@@ -1,0 +1,81 @@
+import 'SimplePDL.ecore'
+
+package simplepdl
+
+context Process
+inv warningSeverity: false
+inv withMessage('Explicit message in process ' + self.name + ' (withMessage)'): false
+/*inv errorSeverity: null*/
+
+context Process
+inv validName('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context ProcessElement
+def: process(): Process =
+	Process.allInstances()
+		->select(p | p.processElements->includes(self))
+		->asSequence()->first()
+
+context WorkSequence
+inv successorAndPredecessorInSameProcess('Activities not in the same process: '
+		+ self.predecessor.name + ' in ' + self.predecessor.process().name+ ' and '
+		+ self.successor.name + ' in ' + self.successor.process().name
+):
+	self.process() = self.successor.process()
+	and self.process() = self.predecessor.process()
+	
+context WorkDefinition
+inv differentNamesWD('Different activities in the process ' + self.Process.name + 
+		' have got the same name: ' + self.name
+) : 
+		self.Process.processElements
+        ->select(pe | pe.oclIsKindOf(WorkDefinition))
+        ->collect(pe | pe.oclAsType(WorkDefinition))
+        ->forAll(wd | self = wd or self.name <> wd.name)
+        
+context WorkSequence
+inv notReflexive('Dependance ' + self.successor.name + ' is reflexive' ) :
+		self.predecessor <> self.successor
+
+context WorkDefinition
+inv validNameWD('Invalid name: ' + self.name):
+		self.name.matches('[A-Za-z_][A-Za-z0-9_]+')
+
+/* Contraintes sur les resources */
+
+context Utilisation
+inv validNameU('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Utilisation
+inv ressourceSufficient('There are less ressource ' + self.ressource.name +
+		' than the quantity allocate to the activity ' + self.name
+):
+		self.nb <= self.ressource.qMax
+
+context Utilisation
+inv utilisationPositivity('The utilisation ' + self.name + ' must be positive'
+):
+		self.nb > 0
+
+context Ressource
+inv validNameR('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Ressource
+inv differentNamesR('Different resources in the process ' + self.Process.name + 
+		' have got the same name: ' + self.name
+) : 
+		self.Process.processElements
+        ->select(pe | pe.oclIsKindOf(Ressource))
+        ->collect(pe | pe.oclAsType(Ressource))
+        ->forAll(r | self = r or self.name <> r.name)
+
+context Ressource
+inv ressourcePositivity('The ressource ' + self.name + ' must be positive'
+):
+		self.qMax > 0
+
+
+endpackage

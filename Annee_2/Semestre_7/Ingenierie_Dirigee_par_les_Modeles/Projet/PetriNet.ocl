@@ -1,0 +1,41 @@
+import 'PetriNet.ecore'
+
+package petrinet
+
+context PetriNet
+inv validName('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Place
+inv nBjetonP('The number of token of the place' + self.name + 'must be positive'):
+	nBjeton >= 0
+
+context Place
+inv validNameP('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+	
+context Place
+inv differentsNameP('Different nodes in the petrinet ' + self.net.name + 
+		' have got the same name: ' + self.name):
+		self.net.places
+        ->select(p | p.oclIsKindOf(Place))
+        ->collect(p | p.oclAsType(Place))
+        ->forAll(p | self = p or self.name <> p.name)
+
+context Arc
+inv nBjetonA('The number of token of the arc' + self.name + 'must be superior of 1'):
+	self.nBjeton >= 1
+
+context Transition
+inv validNameT('Invalid name: ' + self.name):
+	self.name.matches('[A-Za-z_][A-Za-z0-9_]*')
+
+context Transition
+inv differentsNameT('Different transitions in the petrinet ' + self.net.name + 
+		' have got the same name: ' + self.name):
+		self.net.transitions
+        ->select(t | t.oclIsKindOf(Transition))
+        ->collect(t | t.oclAsType(Transition))
+        ->forAll(t | self = t or self.name <> t.name)
+
+endpackage

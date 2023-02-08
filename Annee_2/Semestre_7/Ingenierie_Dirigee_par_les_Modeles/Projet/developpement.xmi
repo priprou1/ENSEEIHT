@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="ASCII"?>
+<simplepdl:Process
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:simplepdl="http://simplepdl"
+    xsi:schemaLocation="http://simplepdl ../SimplePDL.ecore"
+    name="developpement">
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToSuccessors="//@processElements.4 //@processElements.5 //@processElements.6 //@processElements.7"
+      name="Conception">
+    <utilisations
+        nb="2"
+        ressource="//@processElements.12"
+        name="Concevoir"/>
+    <utilisations
+        nb="2"
+        ressource="//@processElements.11"
+        name="Concevoir_Machine"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.4 //@processElements.5"
+      name="RedactionDoc">
+    <utilisations
+        nb="1"
+        ressource="//@processElements.9"
+        name="RedigerDoc"/>
+    <utilisations
+        nb="1"
+        ressource="//@processElements.11"
+        name="RedigerDoc_Machine"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.6"
+      linksToSuccessors="//@processElements.8"
+      name="Programmation">
+    <utilisations
+        nb="2"
+        ressource="//@processElements.10"
+        name="Programmer"/>
+    <utilisations
+        nb="3"
+        ressource="//@processElements.11"
+        name="Programmer_Machine"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkDefinition"
+      linksToPredecessors="//@processElements.7 //@processElements.8"
+      name="RedactionTests">
+    <utilisations
+        nb="1"
+        ressource="//@processElements.13"
+        name="RedigerTest"/>
+    <utilisations
+        nb="2"
+        ressource="//@processElements.11"
+        name="RedigerTest_Machine"/>
+  </processElements>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.1"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToStart"
+      predecessor="//@processElements.0"
+      successor="//@processElements.2"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      predecessor="//@processElements.0"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:WorkSequence"
+      linkType="finishToFinish"
+      predecessor="//@processElements.2"
+      successor="//@processElements.3"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="1"
+      name="Redacteur"
+      utilisations="//@processElements.1/@utilisations.0"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="2"
+      name="Developpeur"
+      utilisations="//@processElements.2/@utilisations.0"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="4"
+      name="Machine"
+      utilisations="//@processElements.0/@utilisations.1 //@processElements.1/@utilisations.1 //@processElements.2/@utilisations.1 //@processElements.3/@utilisations.1"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="3"
+      name="Concepteur"
+      utilisations="//@processElements.0/@utilisations.0"/>
+  <processElements
+      xsi:type="simplepdl:Ressource"
+      qMax="2"
+      name="Testeur"
+      utilisations="//@processElements.3/@utilisations.0"/>
+  <processElements
+      xsi:type="simplepdl:Guidance"
+      elements="//@processElements.0 //@processElements.3"
+      text="A Guidance"/>
+</simplepdl:Process>

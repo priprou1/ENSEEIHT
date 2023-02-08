@@ -1,0 +1,49 @@
+[comment encoding = UTF-8 /]
+[module toltl('http://simplepdl')]
+
+
+[template public processToltl(aProcess : Process)]
+[comment @main/]
+[file (aProcess.name + '_term.ltl', false, 'UTF-8')] 
+[let workdefinitions : OrderedSet(WorkDefinition) = aProcess.getWorkDefinitions() ]
+op finished = [for (wd : WorkDefinition | workdefinitions)][wd.name + '_finished /\\ '/][/for]T;
+[/let]
+['[] finished => dead;'/]
+['[] dead => finished;'/]
+['- <> dead;'/]
+[/file]
+
+[file (aProcess.name + '_inv.ltl', false, 'UTF-8')]
+[let workdefinitions : OrderedSet(WorkDefinition) = aProcess.getWorkDefinitions() ]
+	[for (wd : WorkDefinition | workdefinitions)]
+['[] (' + wd.name + '_ready + ' + wd.name + '_started = 1);'/]
+['[] (' + wd.name + '_ready + ' + wd.name + '_running + ' + wd.name + '_finished = 1);'/]
+['[] (' + wd.name + '_finished => [] ' + wd.name + '_started);'/]
+	[/for]
+[/let]
+[let worksequences : OrderedSet(WorkSequence) = aProcess.getWorkSequences() ]
+	[for (ws : WorkSequence | worksequences)]
+['[] (' + afficherws(ws) + ');'/]
+	[/for]
+[/let]
+[/file]
+[/template]
+
+[query public getWorkDefinitions(p: Process) : OrderedSet(WorkDefinition) = 
+	p.processElements->select( e | e.oclIsTypeOf(WorkDefinition) )
+		->collect( e | e.oclAsType(WorkDefinition) )
+		->asOrderedSet()
+/]
+
+[query public getWorkSequences(p: Process) : OrderedSet(WorkSequence) = 
+	p.processElements->select( e | e.oclIsTypeOf(WorkSequence) )
+		->collect( e | e.oclAsType(WorkSequence) )
+		->asOrderedSet()
+/]
+
+[template public afficherws(ws : WorkSequence) post (trim()) ]
+[if (ws.linkType = WorkSequenceType::startToStart)][ws.successor.name + '_started => [] ' + ws.predecessor.name + '_started'/]
+[elseif (ws.linkType = WorkSequenceType::startToFinish)][ws.successor.name + '_finished => [] ' + ws.predecessor.name + '_started'/]
+[elseif (ws.linkType = WorkSequenceType::finishToStart)][ws.successor.name + '_started => [] ' + ws.predecessor.name + '_finished'/]
+[else][ws.successor.name + '_finished => [] ' + ws.predecessor.name + '_finished'/][/if]
+[/template]

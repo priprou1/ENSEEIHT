@@ -1,0 +1,73 @@
+p 465.0 65.0 Conception_ready 1 n
+t 1200.0 500.0 Programmation_starts n 0 w n {} ne
+p 1200.0 420.0 Programmation_ready 1 n
+p 1140.0 580.0 Programmation_running 0 n
+t 1140.0 690.0 Programmation_finishes 0 w n
+p 1140.0 805.0 Programmation_finished 0 n
+p 285.0 760.0 RedactionTests_finished 0 n
+p 60.0 590.0 Ressource_Testeur 2 n
+p 275.0 555.0 RedactionTests_running 0 n
+t 325.0 485.0 RedactionTests_starts 0 w n
+p 415.0 575.0 RedactionTests_started 0 n
+p 320.0 395.0 RedactionTests_ready 1 n
+t 1170.0 240.0 RedactionDoc_finishes 0 w n
+p 1170.0 325.0 RedactionDoc_finished 0 n
+p 1530.0 165.0 Ressource_Redacteur 1 n
+t 1215.0 110.0 RedactionDoc_starts n 0 w n {} ne
+p 1280.0 175.0 RedactionDoc_started 0 n
+p 1170.0 180.0 RedactionDoc_running 0 n
+p 75.0 80.0 Ressource_Concepteur 3 n
+t 465.0 125.0 Conception_starts 0 w n
+p 400.0 190.0 Conception_running 0 n
+p 575.0 185.0 Conception_started 0 n
+t 400.0 265.0 Conception_finishes 0 w n
+p 400.0 335.0 Conception_finished 0 n
+p 1355.0 560.0 Programmation_started 0 n
+t 280.0 680.0 RedactionTests_finishes n 0 w n {} ne
+p 1215.0 50.0 RedactionDoc_ready 1 n
+p 1470.0 790.0 Ressource_Developpeur 2 n
+p 660.0 620.0 Ressource_Machine 4 n
+e Ressource_Concepteur Conception_starts 2 n
+e Ressource_Machine Conception_starts 2 n
+e Conception_ready Conception_starts 1 n
+e Conception_starts Conception_running 1 n
+e Conception_starts Conception_started 1 n
+e Conception_running Conception_finishes 1 n
+e Conception_finishes Ressource_Concepteur 2 n
+e Conception_finishes 0.9373978149 159.1540134 Ressource_Machine 0.376337405 105.1858474 2 n
+e Conception_finishes Conception_finished 1 n
+e Ressource_Machine 0.1142958876 170.9760583 RedactionDoc_starts 0.5362274737 363.3730865 1 n
+e Ressource_Redacteur RedactionDoc_starts 1 n
+e RedactionDoc_ready RedactionDoc_starts 1 n
+e Conception_started RedactionDoc_starts ?1 n
+e RedactionDoc_starts RedactionDoc_running 1 n
+e RedactionDoc_starts RedactionDoc_started 1 n
+e RedactionDoc_running RedactionDoc_finishes 1 n
+e Conception_finished 0.03166830632 247.8911051 RedactionDoc_finishes 0.5195372679 193.9595641 ?1 n
+e RedactionDoc_finishes Ressource_Machine 1 n
+e RedactionDoc_finishes Ressource_Redacteur 1 n
+e RedactionDoc_finishes RedactionDoc_finished 1 n
+e Ressource_Machine Programmation_starts 3 n
+e Ressource_Developpeur Programmation_starts 2 n
+e Programmation_ready Programmation_starts 1 n
+e Conception_finished Programmation_starts ?1 n
+e Programmation_starts Programmation_running 1 n
+e Programmation_starts Programmation_started 1 n
+e Programmation_running Programmation_finishes 1 n
+e Programmation_finishes Ressource_Machine 3 n
+e Programmation_finishes Ressource_Developpeur 2 sw
+e Programmation_finishes Programmation_finished 1 n
+e Ressource_Testeur RedactionTests_starts 1 n
+e Ressource_Machine RedactionTests_starts 2 n
+e RedactionTests_ready RedactionTests_starts 1 n
+e Conception_started 0.7671393753 111.6467644 RedactionTests_starts 0.1394289692 97.62812095 ?1 n
+e RedactionTests_starts RedactionTests_running 1 n
+e RedactionTests_starts RedactionTests_started 1 n
+e RedactionTests_running RedactionTests_finishes 1 n
+e Programmation_finished RedactionTests_finishes ?1 n
+e RedactionTests_finishes Ressource_Testeur 1 n
+e RedactionTests_finishes Ressource_Machine 2 n
+e RedactionTests_finishes RedactionTests_finished 1 n
+h developpement
+
+

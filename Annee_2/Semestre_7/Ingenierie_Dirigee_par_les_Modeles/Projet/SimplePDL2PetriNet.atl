@@ -1,0 +1,145 @@
+-- @nsURI SimplePDL=http://simplepdl
+-- @nsURI PetriNet=http://petrinet
+
+module SimplePDL2PetriNet;
+create OUT: petrinet from  IN: simplepdl;
+
+-- Obtenir le processus qui contient ce process element.
+-- Remarque: Ce helper ne serait pas utile si une reference opposite
+-- avait ete placee entre Process et ProcessElement
+helper context simplepdl!ProcessElement
+def: getProcess(): simplepdl!Process =
+	simplepdl!Process.allInstances()
+		->select(p | p.processElements->includes(self))
+		->asSequence()->first();
+
+-- Traduire un Process en un PetriNet de meme nom
+rule Process2PetriNet {
+	from p: simplepdl!Process
+	to pn: petrinet!PetriNet (name <- p.name)
+}
+
+-- Traduire une WorkDefinition en un motif sur le reseau de Petri
+rule WorkDefinition2PetriNet {
+	from wd: simplepdl!WorkDefinition
+	to
+		-- PLACES d'une WorkDefinition
+		p_ready: petrinet!Place(
+				name <- wd.name + '_ready',
+				nBjeton <- 1,
+				net <- wd.getProcess()),
+		p_started: petrinet!Place(
+				name <- wd.name + '_started',
+				net <- wd.getProcess()),
+		p_running: petrinet!Place(
+				name <- wd.name + '_running',
+				net <- wd.getProcess()),
+		p_finished: petrinet!Place(
+			name <- wd.name + '_finished',
+			net <- wd.getProcess()),
+		-- TRANSITIONS d'une WorkDefinition
+		t_starts: petrinet!Transition(
+				name <- wd.name + '_starts',
+				net <- wd.getProcess()),
+		t_finishes: petrinet!Transition(
+				name <- wd.name + '_finishes',
+				net <- wd.getProcess()),
+		-- ARCS d'une WorkDefinition
+		a_re2s: petrinet!Arc(
+				name <- p_ready.name + ' --> ' + t_starts.name,
+				transition <- t_starts,
+				place <- p_ready,
+				type <- #place2Transition,
+				nature <- #normal,
+				nBjeton <- 1,
+				net <- wd.getProcess()), 
+		a_s2s: petrinet!Arc(
+				name <- t_starts.name + ' --> ' + p_started.name,
+				transition <- t_starts,
+				place <- p_started,
+				type <- #transition2Place,
+				nature <- #normal,
+				nBjeton <- 1,
+				net <- wd.getProcess()),
+		a_s2ru: petrinet!Arc(
+				name <- t_starts.name + ' --> ' + p_running.name,
+				transition <- t_starts,
+				place <- p_running,
+				type <- #transition2Place,
+				nature <- #normal,
+				nBjeton <- 1,
+				net <- wd.getProcess()),
+		a_ru2f: petrinet!Arc(
+				name <- p_running.name + ' --> ' + t_finishes.name,
+				transition <- t_finishes,
+				place <- p_running,
+				type <- #place2Transition,
+				nature <- #normal,
+				nBjeton <- 1,
+				net <- wd.getProcess()),
+		a_f2f: petrinet!Arc(
+				name <- t_finishes.name + ' --> ' + p_finished.name,
+				transition <- t_finishes,
+				place <- p_finished,
+				type <- #transition2Place,
+				nature <- #normal,
+				nBjeton <- 1,
+				net <- wd.getProcess())
+}
+-- Traduire une WorkSequence en un motif sur le reseau de Petri
+rule WorkSequence2PetriNet {
+	from ws: simplepdl!WorkSequence
+	to
+		arc: petrinet!Arc(
+				name <- 'WorkSequence ' + ws.predecessor.name + ' --' + ws.linkType.toString() + '--> ' + ws.successor.name,
+				transition <- if (ws.linkType=#startToStart or ws.linkType=#finishToStart) then
+						thisModule.resolveTemp(ws.successor,'t_starts')
+					else
+						thisModule.resolveTemp(ws.successor,'t_finishes')
+					endif,
+				place <- if (ws.linkType=#startToStart or ws.linkType=#startToFinish) then
+						thisModule.resolveTemp(ws.predecessor,'p_started')
+					else
+						thisModule.resolveTemp(ws.predecessor,'p_finished')
+					endif,
+				type <- #place2Transition,
+				nature <- #read,
+				nBjeton <- 1,
+				net <- ws.getProcess())
+}
+-- Traduire une Ressource en un motif sur le reseau de Petri
+rule Ressource2PetriNet {
+	from r: simplepdl!Ressource
+	to
+		ressource: petrinet!Place(
+			name <- 'Ressource_' + r.name,
+			nBjeton <- r.qMax,
+			net <- r.getProcess())
+}
+
+-- Traduire une Utilisation en un motif sur le reseau de Petri
+rule Utilisation2PetriNet {
+	from u: simplepdl!Utilisation
+	to
+		-- Arcs d'utilisation
+		a_u2starts: petrinet!Arc(
+			name <- u.ressource.name + ' --' + u.nb + '--> ' + u.workdefinition.name + '_starts',
+			transition <- thisModule.resolveTemp(u.workdefinition,'t_starts'),
+			place <- thisModule.resolveTemp(u.ressource,'ressource'),
+			type <- #place2Transition,
+			nature <- #normal,
+			nBjeton <- u.nb,
+			net <- u.ressource.getProcess()),
+			
+		a_u2finishes: petrinet!Arc(
+			name <- u.workdefinition.name + '_finishes' + ' --' + u.nb + '--> ' + u.ressource.name,
+			transition <- thisModule.resolveTemp(u.workdefinition,'t_finishes'),
+			place <- thisModule.resolveTemp(u.ressource,'ressource'),
+			type <- #transition2Place,
+			nature <- #normal,
+			nBjeton <- u.nb,
+			net <- u.ressource.getProcess())
+			
+}
+
+

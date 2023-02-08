@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petrinet:PetriNet xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:petrinet="http://petrinet" name="developpement">
+  <places nBjeton="1" name="Conception_ready"/>
+  <places name="Conception_started"/>
+  <places name="Conception_running"/>
+  <places name="Conception_finished"/>
+  <places nBjeton="1" name="RedactionDoc_ready"/>
+  <places name="RedactionDoc_started"/>
+  <places name="RedactionDoc_running"/>
+  <places name="RedactionDoc_finished"/>
+  <places nBjeton="1" name="Programmation_ready"/>
+  <places name="Programmation_started"/>
+  <places name="Programmation_running"/>
+  <places name="Programmation_finished"/>
+  <places nBjeton="1" name="RedactionTests_ready"/>
+  <places name="RedactionTests_started"/>
+  <places name="RedactionTests_running"/>
+  <places name="RedactionTests_finished"/>
+  <places nBjeton="1" name="Ressource_Redacteur"/>
+  <places nBjeton="2" name="Ressource_Developpeur"/>
+  <places nBjeton="4" name="Ressource_Machine"/>
+  <places nBjeton="3" name="Ressource_Concepteur"/>
+  <places nBjeton="2" name="Ressource_Testeur"/>
+  <arcs transition="//@transitions.0" place="//@places.0" nBjeton="1" name="Conception_ready --> Conception_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.0" place="//@places.1" nBjeton="1" name="Conception_starts --> Conception_started"/>
+  <arcs type="transition2Place" transition="//@transitions.0" place="//@places.2" nBjeton="1" name="Conception_starts --> Conception_running"/>
+  <arcs transition="//@transitions.1" place="//@places.2" nBjeton="1" name="Conception_running --> Conception_finishes"/>
+  <arcs type="transition2Place" transition="//@transitions.1" place="//@places.3" nBjeton="1" name="Conception_finishes --> Conception_finished"/>
+  <arcs transition="//@transitions.2" place="//@places.4" nBjeton="1" name="RedactionDoc_ready --> RedactionDoc_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.2" place="//@places.5" nBjeton="1" name="RedactionDoc_starts --> RedactionDoc_started"/>
+  <arcs type="transition2Place" transition="//@transitions.2" place="//@places.6" nBjeton="1" name="RedactionDoc_starts --> RedactionDoc_running"/>
+  <arcs transition="//@transitions.3" place="//@places.6" nBjeton="1" name="RedactionDoc_running --> RedactionDoc_finishes"/>
+  <arcs type="transition2Place" transition="//@transitions.3" place="//@places.7" nBjeton="1" name="RedactionDoc_finishes --> RedactionDoc_finished"/>
+  <arcs transition="//@transitions.4" place="//@places.8" nBjeton="1" name="Programmation_ready --> Programmation_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.4" place="//@places.9" nBjeton="1" name="Programmation_starts --> Programmation_started"/>
+  <arcs type="transition2Place" transition="//@transitions.4" place="//@places.10" nBjeton="1" name="Programmation_starts --> Programmation_running"/>
+  <arcs transition="//@transitions.5" place="//@places.10" nBjeton="1" name="Programmation_running --> Programmation_finishes"/>
+  <arcs type="transition2Place" transition="//@transitions.5" place="//@places.11" nBjeton="1" name="Programmation_finishes --> Programmation_finished"/>
+  <arcs transition="//@transitions.6" place="//@places.12" nBjeton="1" name="RedactionTests_ready --> RedactionTests_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.6" place="//@places.13" nBjeton="1" name="RedactionTests_starts --> RedactionTests_started"/>
+  <arcs type="transition2Place" transition="//@transitions.6" place="//@places.14" nBjeton="1" name="RedactionTests_starts --> RedactionTests_running"/>
+  <arcs transition="//@transitions.7" place="//@places.14" nBjeton="1" name="RedactionTests_running --> RedactionTests_finishes"/>
+  <arcs type="transition2Place" transition="//@transitions.7" place="//@places.15" nBjeton="1" name="RedactionTests_finishes --> RedactionTests_finished"/>
+  <arcs nature="read" transition="//@transitions.3" place="//@places.3" nBjeton="1" name="WorkSequence Conception --finishToFinish--> RedactionDoc"/>
+  <arcs nature="read" transition="//@transitions.2" place="//@places.1" nBjeton="1" name="WorkSequence Conception --startToStart--> RedactionDoc"/>
+  <arcs nature="read" transition="//@transitions.4" place="//@places.3" nBjeton="1" name="WorkSequence Conception --finishToStart--> Programmation"/>
+  <arcs nature="read" transition="//@transitions.6" place="//@places.1" nBjeton="1" name="WorkSequence Conception --startToStart--> RedactionTests"/>
+  <arcs nature="read" transition="//@transitions.7" place="//@places.11" nBjeton="1" name="WorkSequence Programmation --finishToFinish--> RedactionTests"/>
+  <arcs transition="//@transitions.0" place="//@places.19" nBjeton="2" name="Concepteur --2--> Conception_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.1" place="//@places.19" nBjeton="2" name="Conception_finishes --2--> Concepteur"/>
+  <arcs transition="//@transitions.0" place="//@places.18" nBjeton="2" name="Machine --2--> Conception_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.1" place="//@places.18" nBjeton="2" name="Conception_finishes --2--> Machine"/>
+  <arcs transition="//@transitions.2" place="//@places.16" nBjeton="1" name="Redacteur --1--> RedactionDoc_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.3" place="//@places.16" nBjeton="1" name="RedactionDoc_finishes --1--> Redacteur"/>
+  <arcs transition="//@transitions.2" place="//@places.18" nBjeton="1" name="Machine --1--> RedactionDoc_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.3" place="//@places.18" nBjeton="1" name="RedactionDoc_finishes --1--> Machine"/>
+  <arcs transition="//@transitions.4" place="//@places.17" nBjeton="2" name="Developpeur --2--> Programmation_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.5" place="//@places.17" nBjeton="2" name="Programmation_finishes --2--> Developpeur"/>
+  <arcs transition="//@transitions.4" place="//@places.18" nBjeton="3" name="Machine --3--> Programmation_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.5" place="//@places.18" nBjeton="3" name="Programmation_finishes --3--> Machine"/>
+  <arcs transition="//@transitions.6" place="//@places.20" nBjeton="1" name="Testeur --1--> RedactionTests_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.7" place="//@places.20" nBjeton="1" name="RedactionTests_finishes --1--> Testeur"/>
+  <arcs transition="//@transitions.6" place="//@places.18" nBjeton="2" name="Machine --2--> RedactionTests_starts"/>
+  <arcs type="transition2Place" transition="//@transitions.7" place="//@places.18" nBjeton="2" name="RedactionTests_finishes --2--> Machine"/>
+  <transitions name="Conception_starts" arcs="//@arcs.0 //@arcs.1 //@arcs.2 //@arcs.25 //@arcs.27"/>
+  <transitions name="Conception_finishes" arcs="//@arcs.3 //@arcs.4 //@arcs.26 //@arcs.28"/>
+  <transitions name="RedactionDoc_starts" arcs="//@arcs.5 //@arcs.6 //@arcs.7 //@arcs.21 //@arcs.29 //@arcs.31"/>
+  <transitions name="RedactionDoc_finishes" arcs="//@arcs.8 //@arcs.9 //@arcs.20 //@arcs.30 //@arcs.32"/>
+  <transitions name="Programmation_starts" arcs="//@arcs.10 //@arcs.11 //@arcs.12 //@arcs.22 //@arcs.33 //@arcs.35"/>
+  <transitions name="Programmation_finishes" arcs="//@arcs.13 //@arcs.14 //@arcs.34 //@arcs.36"/>
+  <transitions name="RedactionTests_starts" arcs="//@arcs.15 //@arcs.16 //@arcs.17 //@arcs.23 //@arcs.37 //@arcs.39"/>
+  <transitions name="RedactionTests_finishes" arcs="//@arcs.18 //@arcs.19 //@arcs.24 //@arcs.38 //@arcs.40"/>
+</petrinet:PetriNet>

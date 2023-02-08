@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<petrinet:PetriNet
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:petrinet="http://petrinet"
+    name="petrinetKO">
+  <places nBjeton="-3"
+      name="P_neg"/>
+  <places name="P 1"/>
+  <places name="P2"/>
+  <places name="P2"/>
+  <arcs transition="//@transitions.0"
+      place="//@places.2"
+      nBjeton="-4"
+      name="A_neg"/>
+  <arcs transition="//@transitions.1"
+      place="//@places.1"
+      nBjeton="2"
+      name="A1"/>
+  <transitions
+      name="T1"
+      arcs="//@arcs.0"/>
+  <transitions
+      name="T1"
+      arcs="//@arcs.1"/>
+</petrinet:PetriNet>
