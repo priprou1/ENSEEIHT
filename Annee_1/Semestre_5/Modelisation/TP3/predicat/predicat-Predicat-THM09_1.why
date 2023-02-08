@@ -1,0 +1,23 @@
+(* this is the prelude for Alt-Ergo, version >= 0.95.2 *)
+logic match_bool : bool, 'a, 'a -> 'a
+
+axiom match_bool_True :
+  (forall z:'a. forall z1:'a. (match_bool(true, z, z1) = z))
+
+axiom match_bool_False :
+  (forall z:'a. forall z1:'a. (match_bool(false, z, z1) = z1))
+
+type t
+
+type ta
+
+type tb
+
+logic p : t -> prop
+
+logic q : t -> prop
+
+logic r : ta, tb -> prop
+
+goal THM09 : ((exists x:ta. (forall y:tb. r(x, y))) ->
+  (forall y:tb. (exists x:ta. r(x, y))))

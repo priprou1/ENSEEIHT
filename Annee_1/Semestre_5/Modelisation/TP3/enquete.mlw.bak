@@ -1,0 +1,55 @@
+(* Utilisation d'outils de preuve automatique à travers la passerelle Why3 pour résoudre une énigme *)
+theory Enquete
+
+   (* Définition des 3 propositions : A, B, C qui représentent le fait que les accusés sont coupables *)
+   predicate a
+   predicate b
+   predicate c
+
+   predicate da = (b /\ (not c)) (* A compléter *)
+   predicate db = (a -> c)(* A compléter *)
+   predicate dc = ((not c)/\(a \/ b))(* A compléter *)
+
+
+   goal Thm10 : (da /\ db /\ dc)
+   goal Thm11 : ((not a) /\ b /\ (not c)) -> (da /\ db /\ dc)
+   (*Question 1: compatibles*)
+   
+   goal Q20 : da/\db -> dc
+   goal Q21 : da/\dc -> db
+   goal Q22 : dc/\db -> da
+   (*Question 2 : on peut déduire da et dc des 2 autres*)
+   
+   goal Q30 : (not a)/\(not b)/\(not c) -> da
+   goal Q31 : (not a)/\(not b)/\(not c) -> db
+   goal Q32 : (not a)/\(not b)/\(not c) -> dc
+   goal Q33 : (not a)/\(not b)/\(not c) -> (not da)
+   goal Q34 : (not a)/\(not b)/\(not c) -> (not dc)
+   (*Question 3: db n'a pas menti, mais da et dc ont menti*)
+   
+   goal Q40 : (da /\ db /\ dc) -> a
+   goal Q41 : (da /\ db /\ dc) -> b
+   goal Q42 : (da /\ db /\ dc) -> c
+   goal Q43 : (da /\ db /\ dc) -> (not a)
+   goal Q44 : (da /\ db /\ dc) -> (not c)
+   (*Question 4: b est coupable et a et c sont innocents*)
+   
+   goal Q50 : (da /\ db /\ dc) -> (not a)/\(not b)/\(not c)
+   goal Q51 : ((not da) /\ db /\ dc) -> a/\(not b)/\(not c)
+   goal Q52 : ((not da) /\ (not db) /\ (not dc)) -> a/\(b)/\( c)
+   goal Q53 : ( da /\ (not db) /\ dc) -> (not a)/\b/\(not c)
+   goal Q54 : (da/\ db /\ (not dc)) -> (not a)/\(not b)/\( c)
+   goal Q55 : ((not da) /\ (not db) /\ dc) -> a/\( b)/\(not c)
+   goal Q56 : a/\(not b)/\ c -> ((not da) /\ db /\ (not dc))(* Tout inverser comme dans cet exemple*)
+   goal Q57 : ((da) /\ (not db) /\ (not dc)) -> (not a)/\b/\(c)
+   goal Q58 : (da /\ db /\ dc) -> not ((not a)/\(not b)/\(not c))(*montrer que Q50 est faux*)
+   goal Q59 : ( da /\ (not db) /\ dc) -> not ((not a)/\b/\(not c))(*montrer que Q53 est faux*)
+   goal Q510 : ((not da) /\ (not db) /\ dc) -> not (a/\( b)/\(not c))(*montrer que Q55 est faux*)
+   goal Q511 : ((not da) /\ db /\ (not dc)) -> not ((a)/\(not b)/\(c))(*montrer que Q56 est faux*)
+   (*Question 5: a coupable et les autres innocents, tous coupables,
+    c coupable et les autres innocents, b et c coupables et les autres
+     innocents*)
+
+
+   
+end

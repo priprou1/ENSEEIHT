@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="0" name="Alt-Ergo" version="2.0.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="1" name="CVC4" version="1.6" timelimit="5" steplimit="0" memlimit="1000"/>
+<file>
+<path name=".."/>
+<path name="enquete.mlw"/>
+<theory name="Enquete">
+ <goal name="Thm10">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Thm11" proved="true">
+ <proof prover="1"><result status="valid" time="0.01"/></proof>
+ </goal>
+ <goal name="Q20" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q21">
+ <proof prover="0"><result status="unknown" time="0.02"/></proof>
+ </goal>
+ <goal name="Q22" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q30">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q31" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="4"/></proof>
+ </goal>
+ <goal name="Q32">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ <proof prover="1"><result status="unknown" time="0.00"/></proof>
+ </goal>
+ <goal name="Q33" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="4"/></proof>
+ </goal>
+ <goal name="Q34" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="5"/></proof>
+ </goal>
+ <goal name="Q40">
+ <proof prover="0"><result status="unknown" time="0.02"/></proof>
+ </goal>
+ <goal name="Q41" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q42">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q43" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q44" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q50">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q51" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q52" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="6"/></proof>
+ </goal>
+ <goal name="Q53">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q54" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="6"/></proof>
+ </goal>
+ <goal name="Q55">
+ <proof prover="0"><result status="unknown" time="0.01"/></proof>
+ </goal>
+ <goal name="Q56" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="5"/></proof>
+ </goal>
+ <goal name="Q57" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q58" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q59" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q510" proved="true">
+ <proof prover="0"><result status="valid" time="0.00" steps="7"/></proof>
+ </goal>
+ <goal name="Q511">
+ </goal>
+</theory>
+</file>
+</why3session>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE why3session PUBLIC "-//Why3//proof session v5//EN"
+"http://why3.lri.fr/why3session.dtd">
+<why3session shape_version="5">
+<prover id="1" name="Alt-Ergo" version="2.0.0" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="3" name="CVC4" version="1.6" timelimit="5" steplimit="0" memlimit="1000"/>
+<prover id="4" name="Coq" version="8.11.0" timelimit="0" steplimit="0" memlimit="0"/>
+<file format="whyml" proved="true">
+<path name=".."/>
+<path name="proposition.mlw"/>
+<theory name="Proposition" proved="true">
+ <goal name="Thm00" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="3"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm00_1.v"><result status="valid" time="0.38"/></proof>
+ </goal>
+ <goal name="Thm01" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="3"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm01_1.v"><result status="valid" time="0.42"/></proof>
+ </goal>
+ <goal name="Thm02" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="1"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm02_1.v"><result status="valid" time="0.39"/></proof>
+ </goal>
+ <goal name="Thm03" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="3"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm03_1.v"><result status="valid" time="0.36"/></proof>
+ </goal>
+ <goal name="Thm04" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="1"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm04_1.v"><result status="valid" time="0.41"/></proof>
+ </goal>
+ <goal name="Thm05" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="3"/></proof>
+ <proof prover="3"><result status="valid" time="0.01"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm05_1.v"><result status="valid" time="0.39"/></proof>
+ </goal>
+ <goal name="Thm06" proved="true">
+ <proof prover="1" obsolete="true"><result status="valid" time="0.00" steps="4"/></proof>
+ <proof prover="3"><result status="valid" time="0.00"/></proof>
+ <proof prover="4" edited="proposition_Proposition_Thm06_1.v"><result status="valid" time="0.38"/></proof>
+ </goal>
+</theory>
+</file>
+</why3session>
