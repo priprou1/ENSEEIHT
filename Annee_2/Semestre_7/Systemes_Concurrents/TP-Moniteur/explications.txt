@@ -1,0 +1,5 @@
+Moniteur en Java
+- priorité aux signaleurs -> retester les prédicats attendues (if _> while)
+- mutex explicite (il faut encadrer les opération par lock ... unlock, car plusieurs oppérations peuvent être en même temps)
+- les infos sur l'état des files d'attentes (hasWaiters()) ne sont pas fiable (surtout en multi proc)
+

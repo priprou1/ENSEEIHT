@@ -1,0 +1,145 @@
+<?xml version="1.0"?>
+<Locations >
+  <Project >
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-simu.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 26" line=" 38" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-simu.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-simu.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 60" line=" 18" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-simu.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 24" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 24" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 31" line=" 24" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 24" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 55" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 37" line=" 68" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 55" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 9" line=" 67" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 55" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 17" line=" 69" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 16" line=" 55" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 23" line=" 28" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 20" line=" 54" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 7" line=" 71" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 28" line=" 51" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 30" line=" 43" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 51" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 27" line=" 52" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-priored.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-priored.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique2.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique2.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-priored.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique2.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-priored.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique2.ads</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 1" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-basique2.adb</vfs_file>
+    </file_marker>
+    <file_marker column=" 1" line=" 24" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro.adb</vfs_file>
+    </file_marker>
+    <file_marker current="true" column=" 58" line=" 44" >
+      <vfs_project>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/build.gpr</vfs_project>
+      <vfs_file>/home/pgonthie/Documents/Annee_2/SC/TP-Ada/lr-synchro-priored.adb</vfs_file>
+    </file_marker>
+  </Project>
+</Locations>
