@@ -1,0 +1,35 @@
+# Données pour le problème : Livraison de clients à partir d'un magasin cas 4
+
+data;
+
+set DEPART :=
+ALPHA;
+
+set LIEU :=
+ALPHA
+C1
+C2
+C3
+C4
+C5;
+
+set ORDREPASSAGE :=
+1
+2
+3
+4
+5
+6;
+
+param distances : ALPHA C1 C2 C3 C4 C5 :=
+ALPHA 0 1 1 10 12 12
+C1 1 0 1 8 10 11
+C2 1 1 0 8 11 10
+C3 10 8 8 0 1 1
+C4 12 10 11 1 0 1
+C5 12 11 10 1 1 0;
+# 0 au lieu de - pour le trajet vers lui même car le solveur n'accepte que des nombres
+
+param n := 6;
+
+end;

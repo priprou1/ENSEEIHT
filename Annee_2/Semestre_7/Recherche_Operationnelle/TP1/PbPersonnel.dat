@@ -1,0 +1,19 @@
+# Données pour le problème : Affecter du personnel à un travail
+
+data;
+
+set PERSONNEL :=
+Marie
+Pierre
+Jean;
+
+set TRAVAIL :=
+Coder
+Tester
+Rediger;
+
+param coutformation: Coder Tester Rediger:=
+Marie 1 4 5
+Pierre 3 4 2
+Jean 2 2 2;
+
