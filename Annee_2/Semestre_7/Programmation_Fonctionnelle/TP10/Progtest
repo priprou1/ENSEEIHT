@@ -1,0 +1,11 @@
+begin
+move 20;
+turn 90;
+on;
+repeat 360
+begin
+move 1;
+turn 1;
+end;
+off;
+end
